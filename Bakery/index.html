@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Bakery</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style-min-1280.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="clearfix">
-            <p class="logo">Gustoso</p>
-            <ul class="menu">
-                <li><a href="#">welcome</a></li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">reservations</a></li>
-                <li><a href="#">news</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-            <div class="social">
-                <a href="#"><img src="image/header/twitter.png" alt=""></a>
-                <a href="#"><img src="image/header/facebook.png" alt=""></a>
-                <a href="#"><img src="image/header/instagram.png" alt=""></a>
-            </div>
-        </nav>
+        <div class="navigation-container">
+            <nav class="clearfix">
+                <p class="logo">Gustoso</p>
+                <ul class="menu">
+                    <li><a href="#">welcome</a></li>
+                    <li class="tilda">~</li>
+                    <li><a href="#">menu</a></li>
+                    <li class="tilda">~</li>
+                    <li><a href="#">reservations</a></li>
+                    <li class="tilda">~</li>
+                    <li><a href="#">news</a></li>
+                    <li class="tilda">~</li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="social clearfix">
+                    <a href="#"><img src="image/header/twitter.png" alt=""></a>
+                    <a href="#"><img src="image/header/facebook.png" alt=""></a>
+                    <a href="#"><img src="image/header/instagram.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
         <div class="text-box">
             <h1>
                 Pastry with love
@@ -36,10 +42,39 @@
                 Our menu
             </button>
         </div>
-        <!--<img src="image/header/icon.png" alt="">-->
+
     </header>
+
     <main>
+
         <section class="chef">
+            <img src="image/header/icon.png" alt="" class="post-header-icon">
+            <div class="inner-container clearfix">
+
+                <div class="col col-left">
+                    <h2>Art of cakes</h2>
+                    <h4>we create delicious memories</h4>
+                    <p class="article-text">
+                        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
+                        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                        sem quam semper libero, sit amet adipiscing sem neque sed.
+                    </p>
+                    <h5>Chef Cook</h5>
+                    <div class="avatar clearfix">
+                        <p>Benito</p>
+                        <img src="image/main/section1/avatar.png" alt="">
+                        <p>Gaspare</p>
+                    </div>
+                    <div class="quote clearfix">
+                        <p>“</p>
+                        <p>Unique creations for unique<br> occasions.</p>
+                        <p>„</p>
+                    </div>
+                </div>
+                <div class="col col-right">
+                    <img src="image/main/section1/right-col.png" alt="">
+                </div>
+            </div>
         </section>
         <!--<section class="best-choice"></section>
         <section class="offer"></section>
