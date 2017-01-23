@@ -81,7 +81,7 @@ nav {
     justify-content: space-between;
 }
 
-nav .logo {
+.logo {
     float: left;
     font: normal 30px Scriptina, sans-serif;
     color: white;
@@ -92,13 +92,13 @@ nav .logo {
     width: 11.2%;
 }
 
-nav .menu {
+.menu {
     float: left;
     width: 65.4%;
     margin: 0 7.9%;
 }
 
-nav .menu li, nav .menu a {
+.menu li, nav .menu a {
     display: inline-block;
     color: white;
     font:  normal 13px Alegreya, serif;
@@ -218,6 +218,43 @@ section .article-text {
     letter-spacing: 1px;
 }
 
+.name {
+    font: normal 30px Alegreya, serif;
+}
+
+.minutes {
+    position: absolute;
+    top: -45px;
+    right: -105px;
+    background-image: url(../image/main/section2/40min.jpg);
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    padding-top: 33px;
+}
+
+.minutes h5 {
+    font: bold 18px Alegreya, serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #A47D5E;
+}
+
+.minutes h6 {
+    font: bold 92px Playfair Display, serif;
+    text-align: center;
+    color: #dfc691;
+    line-height: 85px;
+}
+
+.minutes h4 {
+    font: bold 18px Alegreya, serif;
+    text-transform: lowercase;
+    text-align: center;
+    color: #979285;
+    margin-top: 10px;
+}
+
 /*section 1*/
 
 .chef {
@@ -304,7 +341,351 @@ section .article-text {
 }
 
 
+/*SECTION 2 */
 
+.best-choice {
+    width: 100%;
+    height: 760px;
+    background-image: url("../image/main/section2/section2-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 8.66px 10px 0 rgba(0, 0, 0, 0.392);
+    padding-top: 140px;
+}
 
+.best-choice .inner-container {
+    width: 61%;
+    min-width: 965px;
+    margin: 0 auto;
+    height: 512px;
+    box-shadow: 50px 8.66px 14px 0 rgba(0, 0, 0, 0.392);
+    position: relative;
+}
+
+.best-choice .inner-container .left-col {
+    width: 43.5%;
+    float: left;
+    background-image: url(../image/main/section2/rating-aside.png), url(../image/main/section2/pancake.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 5%, cover;
+    background-position: 10%, left;
+    height: 100%;
+}
+
+.best-choice .inner-container .right-col {
+    width: 56.5%;
+    float: left;
+    background-image: url(../image/main/section2/text-vector-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: white;
+    height: 100%;
+    padding: 80px 60px 0 60px;
+}
+
+.best-choice .article-text {
+    max-width: 410px;
+    text-align: left;
+}
+
+.slider {
+    position: relative;
+    width: 428px;
+    height: 90px;
+    margin-top: 70px;
+}
+
+.left-arrow-icon {
+    position: absolute;
+    left: 0;
+    top: 29px;
+    background-image: url("../image/main/section2/left-arrow.png");
+    width: 32px;
+    height: 32px;
+}
+
+.left-arrow-icon:hover {
+    background-image: url("../image/main/section2/left-arrow-hover.png");
+}
+
+.right-arrow-icon {
+    position: absolute;
+    right: 0;
+    top: 29px;
+    background-image: url("../image/main/section2/right-arrow.png");
+    width: 32px;
+    height: 32px;
+}
+
+.right-arrow-icon:hover {
+    background-image: url("../image/main/section2/right-arrow-hover.png");
+}
+
+.slider-inner {
+    width: 330px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.slider-inner-inner {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+.slider-inner-inner a {
+    float: left;
+    margin-left: 30px;
+}
+
+.slider-inner-inner a:first-child {
+    margin: 0;
+}
+
+/*SECTION 3*/
+
+.breakfast {
+    width: 100%;
+    height: 760px;
+    background-image: url("../image/main/section3/section3-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    position: relative;
+}
+
+.inner-for-bg {
+    background-image: url(../image/main/section3/section3-bg-2.png);
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.breakfast-menu {
+    float: left;
+    width: 50%;
+    padding-left: 8%;
+}
+
+.breakfast-menu h2 {
+    color: white;
+}
+
+.breakfast-menu .dish {
+    text-align: center;
+}
+
+.breakfast-menu .dish .name {
+    color: white;
+}
+
+.breakfast-menu .dish .article-text {
+    color: #c2beba;
+    font: normal 16px ProximaNova1;
+}
+
+.breakfast-menu .dish .price {
+    font: normal 36px Alegreya, serif;
+    color: #DFC691;
+    line-height: 62px;
+}
+
+.menu-page {
+    float: right;
+    width: 465px;
+    background-image: url(../image/main/section3/menu.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 600px;
+    padding-top: 190px;
+    padding-right: 70px;
+    padding-left: 45px;
+}
+
+.menu-page h2 {
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.menu-page .article-text {
+    width: 350px;
+}
+
+.menu-page .read-button {
+    font: bold 18px Alegreya, serif;
+    color: #A47D5E;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #9E9C93;
+    width: 190px;
+    height: 46px;
+    margin: 0 auto;
+    display: block;
+    line-height: 46px;
+    margin-top: 18px;
+}
+
+/*SECTION 4*/
+
+.sandwich {
+    background-color: #f3f1e9;
+    width: 100%;
+    height: 920px;
+}
+
+.sandwich .inner-container {
+    padding-top: 90px;
+    background-image: url("../image/main/section4/section4-bg.png");
+    background-repeat: no-repeat;
+    background-position: top, center;
+}
+
+.sandwich .head h2 {
+    margin-bottom: 5px;
+}
+
+.sandwich .head h4 {
+    margin-bottom: 0;
+}
+
+.consist {
+    float: left;
+    width: 23%;
+}
+
+.consist .ingredient {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.consist .ingredient img {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.consist .ingredient .name {
+    text-align: center;
+    color: #a47d5e;
+    font-weight: bold;
+}
+
+.consist .ingredient .article-text {
+    line-height: 22px;
+}
+
+.sandwich-pic {
+    float: right;
+    width: 66.3%;
+    background-image: url(../image/main/section4/sandwich-image.jpg);
+    background-repeat: no-repeat;
+    background-position: right, center;
+    background-size: contain;
+    height: 556px;
+    margin-top: 88px;
+    position: relative;
+}
+
+.sandwich-pic aside {
+    position: absolute;
+    top: -23px;
+    right: 9px;
+    width: 200px;
+    height: 600px;
+}
+
+.sandwich-pic aside .minutes {
+    position: static;
+}
+
+.sandwich-pic aside .minutes.transparent {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: none;
+}
+
+.sandwich-pic aside .minutes.transparent:first-child {
+    height: 199px;
+    margin-bottom: 1px;
+}
+
+.sandwich-pic aside .minutes.transparent h6 {
+    color: #56534c;
+    font-size: 60px;
+}
+
+.sandwich-pic .recipe {
+    width: 170px;
+    height: 58px;
+    border: 1px dashed #DFC691;
+    background-color: white;
+    font: bold 18px Alegreya, serif;
+    color: #DFC691;
+    text-transform: uppercase;
+    line-height: 58px;
+    text-align: center;
+    position: absolute;
+    bottom: -18px;
+    left: -22px;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 240px;
+    width: 100%;
+    background-color: #f3f1e9;
+    padding-top: 100px;
+}
+
+footer .nav-bar, footer .logotype {
+    float: left;
+    height: 70px;
+}
+
+footer .nav-bar {
+    width: 41.3%;
+    border-top: 1px solid #C2BEBA;
+    border-bottom: 1px solid #C2BEBA;
+}
+
+footer .nav-bar .menu {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+footer .nav-bar .menu li, footer .nav-bar .menu a {
+    color: #35332f
+}
+
+footer .nav-bar .menu li {
+    margin: 0 8.5%;
+    letter-spacing: 3px;
+}
+
+footer .nav-bar .menu .tilda {
+    margin: 0;
+}
+
+footer .logotype {
+    width: 17.4%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+footer .logotype .logo {
+    color: #56534C;
+    width: 100%;
+    text-align: center;
+    line-height: 70px;
+    padding: 0;
+}
 
 
