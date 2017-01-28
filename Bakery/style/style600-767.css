@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 767px) {
     nav {
         width: 80%;
         max-width: auto;
@@ -63,7 +63,13 @@
     }
     .text-box h3 {
         font-size: 20px;
+        width: auto;
     }
+
+    .inner-container {
+        width: 90%;
+    }
+
     /*SECTION1*/
     .chef {
         height: auto;
@@ -85,13 +91,13 @@
     .best-choice .inner-container {
         min-width: auto;
         height: 100%;
-        width: 80%;
+        width: 90%;
     }
     .best-choice .inner-container .left-col {
         float: none;
-        height: 527px;
+        height: 462px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 80px;
     }
     .best-choice .inner-container .right-col {
         float: none;
@@ -100,11 +106,21 @@
         position: relative;
     }
     .minutes {
-        top: -15px;
-        right: -60px;
+        top: -70px;
+        right: -10px;
+        width: 150px;
+        height: 150px;
+        padding-top: 15px;
+    }
+    .minutes h6 {
+        line-height: 27px;
+        font-size: 80px;
+    }
+    .minutes h4 {
+        margin-top: 35px;
     }
     .slider {
-        width: 483px;
+        width: 410px;
     }
     /*SECTION3*/
     .breakfast {
@@ -143,38 +159,39 @@
     }
     .sandwich-pic aside {
         height: 510px;
-        top: -25px;
-        right: -30px;
-        width: 170px;
-    }
-    .minutes {
-        top: -68px;
+        top: 5px;
         right: -20px;
-        width: 170px;
-        height: 170px;
+        width: 150px;
     }
     .minutes h6 {
         line-height: 60px;
     }
     .sandwich-pic aside .minutes.transparent {
-        height: 170px;
+        height: 150px;
     }
     .sandwich-pic aside .minutes.transparent:first-child {
-        height: 169px;
+        height: 149px;
     }
     .sandwich-pic .recipe {
-        bottom: -25px;
+        bottom: 20px;
         left: -5px;
     }
     /*FOOTER*/
     footer {
-        height: 200px;
+        height: 310px;
     }
     footer .inner-container {
         width: 100%;
     }
-    footer .logotype .logo {
-        font-size: 24px;
+    footer .nav-bar, footer .logotype {
+        float: none;
+        width: 100%;
     }
 }
 
+@media (min-width: 600px) and (max-width: 767px) {
+    .sandwich-pic .recipe {
+        bottom: 0;
+        left: -20px;
+    }
+}
