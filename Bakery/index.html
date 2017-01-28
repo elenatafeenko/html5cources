@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <title>Bakery</title>
     <link rel="stylesheet" href="style/style-min-1280.css">
+    <link rel="stylesheet" href="style/style1024-1279.css">
+    <link rel="stylesheet" href="style/style768-1023.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navigation-container">
             <nav class="clearfix">
                 <p class="logo">Gustoso</p>
+                <div class="small-menu-icon">&#8801</div>
                 <ul class="menu">
                     <li><a href="#">welcome</a></li>
                     <li class="tilda">~</li>
@@ -38,9 +42,7 @@
             <h3>
                 We’re bringing you fresh ingredients every day in ways you can’t resist.
             </h3>
-            <button>
-                Our menu
-            </button>
+            <button id="book-button">Book a table</button>
         </div>
 
     </header>
@@ -210,6 +212,46 @@
             </div>
         </div>
     </footer>
+    <div class="booking-form" id="book-form">
+        <div class="booking-form-inner">
+            <h2>~ Book a table ~</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Your contacts</legend>
+                    <label>
+                        Your first name *
+                        <input type="text" name="username" placeholder="John" required autofocus>
+                    </label>
+                    <label>
+                        Your last name *
+                        <input type="text" name="username" placeholder="Smith" required>
+                    </label>
+                    <label>
+                        Your phone number *
+                        <input type="tel" name="phone" placeholder="+375(29)111-11-11" pattern="\+375\((29|33|44)\)\d{3}-\d{2}-\d{2}" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Table info</legend>
+                    <label>
+                        What day do you want to come?
+                        <input type="date" name="order-date">
+                    </label>
+                    <label>
+                        What time do you want to come?
+                        <input type="time" name="order-time">
+                    </label>
+                    <label>How many people are there in your party?</label>
+                    <label class="radio-type"><input type="radio" name="table-size" value="1-2">1-2</label>
+                    <label class="radio-type"><input type="radio" name="table-size" value="3-4">3-4</label>
+                    <label class="radio-type"><input type="radio" name="table-size" value="5-6">5-6</label>
+                    <label class="radio-type"><input type="radio" name="table-size" value="7-8">7-8</label>
+                </fieldset>
+                <input type="submit" value="Book" id="submit-form-button">
+                <div id="close-form-button" class="close-button">Cancel</div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 

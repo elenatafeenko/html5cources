@@ -61,6 +61,10 @@ header {
     width: 100%;
     height: 902px;
     background-image: url("../image/header/bg-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 /*NAVIGATION*/
@@ -130,6 +134,10 @@ nav .social {
 
 /*HEADER*/
 
+.small-menu-icon {
+    display: none;
+}
+
 .text-box {
     width: 50%;
     margin: 180px auto 0 auto;
@@ -167,7 +175,6 @@ button {
     height: 48px;
     border: 1px dashed rgb(158, 156, 147);;
     background-color: rgba(86, 83, 76, 0.529);
-    padding: 0 45px;
     font: bold 14px Alegreya, serif;
     color: white;
     text-transform: uppercase;
@@ -582,6 +589,7 @@ section .article-text {
 
 .sandwich-pic {
     float: right;
+    min-width: 740px;
     width: 66.3%;
     background-image: url(../image/main/section4/sandwich-image.jpg);
     background-repeat: no-repeat;
@@ -595,7 +603,7 @@ section .article-text {
 .sandwich-pic aside {
     position: absolute;
     top: -23px;
-    right: 9px;
+    right: 8px;
     width: 200px;
     height: 600px;
 }
@@ -630,7 +638,7 @@ section .article-text {
     line-height: 58px;
     text-align: center;
     position: absolute;
-    bottom: -18px;
+    bottom: -8px;
     left: -22px;
 }
 
@@ -658,6 +666,9 @@ footer .nav-bar .menu {
     height: 100%;
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 footer .nav-bar .menu li, footer .nav-bar .menu a {
@@ -665,7 +676,6 @@ footer .nav-bar .menu li, footer .nav-bar .menu a {
 }
 
 footer .nav-bar .menu li {
-    margin: 0 8.5%;
     letter-spacing: 3px;
 }
 
@@ -689,3 +699,110 @@ footer .logotype .logo {
 }
 
 
+/*BOOKING FORM*/
+
+.booking-form {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.booking-form-inner {
+    width: 400px;
+    margin: 50px auto 0 auto;
+    color: #A47D5E;
+    text-align: center;
+    border: 1px solid #9E9C93;
+    background-color: rgb(243, 241, 233);
+    padding: 20px 15px;
+    overflow: auto;
+    max-width: 80%;
+}
+
+.booking-form-inner h2 {
+    margin-bottom: 15px;
+    font: bold 48px Alegreya, serif;
+    color: #56534C;
+    text-align: center;
+    line-height: 48px;
+}
+
+.booking-form-inner fieldset {
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border: 1px dashed #9E9C93;
+}
+
+.booking-form legend {
+    font: normal 20px Alegreya, serif;
+    color: #56534C;
+}
+
+.booking-form-inner fieldset>label {
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.booking-form-inner fieldset>label>input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #9E9C93;
+    outline: none;
+    padding-left: 5px;
+    font: normal 12px ProximaNova1, serif;
+    color: #56534C;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+input::-moz-placeholder {
+    font: normal 12px ProximaNova1, serif;
+    color: #56534C;
+}
+input::-webkit-input-placeholder {
+    font: normal 12px ProximaNova1, serif;
+    color: #56534C;
+}
+input:-ms-input-placeholder {
+    font: normal 12px ProximaNova1, serif;
+    color: #56534C;
+}
+input:-ms-input-placeholder {
+    font: normal 12px ProximaNova1, serif;
+    color: #56534C;
+}
+input::placeholder {
+    font: normal 12px ProximaNova1, serif;
+    color: #56534C;
+}
+
+.booking-form-inner fieldset .radio-type {
+    width: 25%;
+    float: left;
+    padding: 0 32px;
+}
+
+.booking-form-inner fieldset .radio-type input[type="radio"] {
+    margin: 5px auto 10px auto;
+}
+
+input[type="submit"], .close-button {
+    font: bold 16px Alegreya, serif;
+    color: #56534C;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #9E9C93;
+    width: 120px;
+    height: 35px;
+    margin: 0 auto;
+    display: block;
+    line-height: 35px;
+    margin-top: 18px;
+    cursor: pointer;
+    background-color: transparent;
+}

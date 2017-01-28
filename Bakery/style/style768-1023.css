@@ -1,0 +1,28 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav {
+        width: 80%;
+        max-width: auto;
+    }
+    .logo {
+        width: 30.2%;
+    }
+    .small-menu-icon {
+        display: block;
+        color: white;
+        font-size: 80px;
+        line-height: 70px;
+        width: 7%;
+    }
+    .small-menu-icon:hover {
+        color: #56534C;
+    }
+    .menu {
+        display: none;
+    }
+    nav .social {
+        width: 19.6%;
+    }
+    .small-menu-icon:hover+.menu, .menu:hover {
+        display: block;
+    }
+}
