@@ -409,9 +409,10 @@ section .article-text {
     background-image: url("../image/main/section2/left-arrow.png");
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
-.left-arrow-icon:hover {
+.left-arrow-icon:not([disabled]):hover {
     background-image: url("../image/main/section2/left-arrow-hover.png");
 }
 
@@ -422,14 +423,15 @@ section .article-text {
     background-image: url("../image/main/section2/right-arrow.png");
     width: 32px;
     height: 32px;
+    cursor: pointer;
 }
 
-.right-arrow-icon:hover {
+.right-arrow-icon:not([disabled]):hover {
     background-image: url("../image/main/section2/right-arrow-hover.png");
 }
 
 .slider-inner {
-    width: 330px;
+    width: 345px;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -440,10 +442,13 @@ section .article-text {
     position: absolute;
     left: 0;
     height: 100%;
+    white-space: nowrap;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s;
 }
 
 .slider-inner-inner a {
-    float: left;
+    display: inline-block;
     margin-left: 30px;
 }
 
@@ -472,6 +477,7 @@ section .article-text {
     width: 100%;
     position: absolute;
     top: 0;
+    pointer-events: none;
 }
 
 .breakfast-menu {
