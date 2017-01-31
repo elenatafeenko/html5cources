@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="public/application.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson-Text" rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,13 +38,9 @@
         </div>
     </header>
     <div class="slider">
-        <div class="slider-inner">
+        <div class="slider-inner" id="slider">
             <div class="slide">
                 <div class="inner-container">
-                    <div class="controls">
-                        <div class="left-control"></div>
-                        <div class="right-control"></div>
-                    </div>
                     <div class="text">
                         <h3>Design Studio and Digital Agency</h3>
                         <div class="for-h1">
@@ -55,10 +52,6 @@
             </div>
             <div class="slide">
                 <div class="inner-container">
-                    <div class="controls">
-                        <div class="left-control"></div>
-                        <div class="right-control">;</div>
-                    </div>
                     <div class="text">
                         <h3>Design Studio and Digital Agency</h3>
                         <div class="for-h1">
@@ -70,10 +63,6 @@
             </div>
             <div class="slide">
                 <div class="inner-container">
-                    <div class="controls">
-                        <div class="left-control"></div>
-                        <div class="right-control"></div>
-                    </div>
                     <div class="text">
                         <h3>Design Studio and Digital Agency</h3>
                         <div class="for-h1">
@@ -83,6 +72,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="controls">
+            <div class="left-control" id="left-control"></div>
+            <div class="right-control" id="right-control"></div>
         </div>
     </div>
     <main>

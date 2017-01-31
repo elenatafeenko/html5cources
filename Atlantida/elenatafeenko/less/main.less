@@ -140,8 +140,42 @@ header {
   height: 635px;
   width: 100%;
   overflow: hidden;
+  position: relative;
+
+  .controls {
+    .inner-container;
+    padding-top: 255px;
+    position: relative;
+    .left-control {
+      cursor: pointer;
+      height: 34px;
+      width: 34px;
+      position: absolute;
+      top: 336px;
+      left: 0;
+      background-image: url("../image/index-page/slider/left-control.png");
+      &:hover {
+        background-image: url("../image/index-page/slider/left-control-hover.png");
+      }
+    }
+    .right-control {
+      cursor: pointer;
+      height: 34px;
+      width: 34px;
+      position: absolute;
+      top: 336px;
+      right: 0;
+      background-image: url("../image/index-page/slider/right-control.png");
+      &:hover {
+        background-image: url("../image/index-page/slider/right-control-hover.png");
+      }
+    }
+  }
 
   .slider-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 300%;
     height: 100%;
     display: flex;
@@ -161,30 +195,6 @@ header {
         text-align: center;
         padding-top: 255px;
 
-        .controls {
-          .left-control {
-            height: 34px;
-            width: 34px;
-            position: absolute;
-            top: 336px;
-            left: 0;
-            background-image: url("../image/index-page/slider/left-control.png");
-            &:hover {
-              background-image: url("../image/index-page/slider/left-control-hover.png");
-            }
-          }
-          .right-control {
-            height: 34px;
-            width: 34px;
-            position: absolute;
-            top: 336px;
-            right: 0;
-            background-image: url("../image/index-page/slider/right-control.png");
-            &:hover {
-              background-image: url("../image/index-page/slider/right-control-hover.png");
-            }
-          }
-        }
         .text {
           margin: 0 auto;
           h3 {
