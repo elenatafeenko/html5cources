@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="public/application.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson-Text" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="inner-container">
             <div class="logo">
                 <a href="index.html" class="clearfix">
@@ -19,15 +22,15 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">history</a></li>
-                    <li><a href="#">team</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">prices</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#" class="navigation-button active" data-target="home">home</a></li>
+                    <li><a href="#" class="navigation-button" data-target="about">about</a></li>
+                    <li><a href="#" class="navigation-button" data-target="services">services</a></li>
+                    <li><a href="#" class="navigation-button" data-target="">history</a></li>
+                    <li><a href="#" class="navigation-button" data-target="">team</a></li>
+                    <li><a href="#" class="navigation-button" data-target="">portfolio</a></li>
+                    <li><a href="#" class="navigation-button" data-target="">prices</a></li>
+                    <li><a href="#" class="navigation-button" data-target="">blog</a></li>
+                    <li><a href="#" class="navigation-button" data-target="">contact</a></li>
                 </ul>
             </nav>
             <div class="social clearfix">
@@ -37,7 +40,7 @@
             </div>
         </div>
     </header>
-    <div class="slider">
+    <div class="slider section" id="home">
         <div class="slider-inner" id="slider">
             <div class="slide">
                 <div class="inner-container">
@@ -46,7 +49,7 @@
                         <div class="for-h1">
                             <h1>WE ARE ATLANTIDA</h1>
                         </div>
-                        <a href="#">Get Started</a>
+                        <a href="#" class="navigation-button" data-target="about">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +60,7 @@
                         <div class="for-h1">
                             <h1>WE ARE ATLANTIDA</h1>
                         </div>
-                        <a href="#">Get Started</a>
+                        <a href="#" class="navigation-button" data-target="about">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +71,7 @@
                         <div class="for-h1">
                             <h1>WE ARE ATLANTIDA</h1>
                         </div>
-                        <a href="#">Get Started</a>
+                        <a href="#" class="navigation-button" data-target="about">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +82,7 @@
         </div>
     </div>
     <main>
-        <section class="about-us">
+        <section class="about-us section" id="about">
             <div class="inner-container">
                 <div class="block-top">
                     <div class="article-pic"></div>
@@ -128,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services section" id="services">
             <div class="inner-container">
                 <div class="for-h2">
                     <h2>services</h2>
