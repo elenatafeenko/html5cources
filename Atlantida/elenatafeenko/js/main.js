@@ -90,3 +90,14 @@
     $('[data-target="' + activeSection.id + '"').addClass('active');
   })
 })();
+
+(function initContactButtons() {
+  var nameInput = $('#input-name');
+  var startContactButtons = $('[data-action="start-contact"]');
+  startContactButtons.on('click', function(e) {
+    e.preventDefault();
+    $('body').stop().animate({ scrollTop: nameInput[0].offsetTop }, '500', 'swing', function() {
+      nameInput.focus();
+    });
+  })
+})();
