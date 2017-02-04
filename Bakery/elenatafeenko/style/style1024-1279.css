@@ -1,0 +1,241 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /*header*/
+    header {
+        height: 800px;
+    }
+    nav {
+        max-width: none;
+    }
+    .logo {
+        font-size: 25px;
+        margin-left: 45px;
+    }
+    .menu {
+        margin: 0;
+    }
+    .tilda {
+        margin: 0 2.2%;
+    }
+    .text-box {
+        margin-top: 70px;
+    }
+    .text-box h1 {
+        font-size: 84px;
+    }
+    .dashed-line {
+        margin: 45px auto;
+    }
+    /*main*/
+    .inner-container {
+        width: 95%;
+    }
+    section h2 {
+        font-size: 44px;
+        margin-bottom: 15px;
+        line-height: 44px;
+    }
+    section h4 {
+        margin-bottom: 40px;
+        font-size: 11px;
+    }
+    section .article-text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    /*section1*/
+    .chef {
+        height: 600px;
+    }
+    .chef .col {
+        padding-top: 0;
+    }
+    .chef .col-right img {
+        width: 460px;
+    }
+    .col .col-left {
+        padding: 0 11px;
+    }
+    .chef .col-left h5 {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+    .avatar {
+        height: 80px;
+        width: 340px;
+        margin: 0 auto 10px auto;
+    }
+    .avatar p {
+        font-size: 22px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .avatar img {
+        margin: 0 20px;
+        height: 80px;
+    }
+    .quote {
+        height: 75px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .quote p {
+        font-size: 50px;
+    }
+    .quote p:nth-child(2) {
+        font-size: 22px;
+        line-height: 30px;
+        height: 75px;
+    }
+    /*section2*/
+    .best-choice {
+        height: 600px;
+        padding-top: 68px;
+    }
+    .best-choice .inner-container {
+        min-width: auto;
+        height: 463px;
+        width: 92%;
+    }
+    .minutes {
+        top: -68px;
+        right: -30px;
+        width: 150px;
+        height: 150px;
+        padding-top: 15px;
+    }
+    .minutes h6 {
+        font-size: 75px;
+        line-height: 40px;
+    }
+    .minutes h4 {
+        margin-bottom: 0;
+        margin-top: 25px;
+    }
+    /*section3*/
+    .breakfast {
+        height: 600px;
+        padding-top: 70px;
+    }
+    .breakfast-menu {
+        padding-left: 22%;
+    }
+    .breakfast-menu h2 {
+        font-size: 37px;
+        margin-bottom: 10px;
+    }
+    .breakfast-menu h4 {
+        margin-bottom: 20px;
+    }
+    .name {
+        font-size: 26px;
+    }
+    .breakfast-menu .dish .article-text {
+        font-size: 14px;
+    }
+    .breakfast-menu.dish .price {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    .breakfast-menu.dish img {
+        height: 23px;
+    }
+    .menu-page {
+        width: 370px;
+        padding-top: 130px;
+        height: 477px;
+        padding-right: 47px;
+        padding-left: 30px;
+    }
+    .menu-page h2 {
+        font-size: 37px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .menu-page .article-text {
+        width: 300px;
+    }
+    .menu-page .read-button {
+        margin-top: 50px;
+    }
+    /*section4*/
+    .sandwich {
+        height: 725px;
+    }
+    .sandwich .inner-container {
+        padding-top: 60px;
+        height: 100%;
+    }
+    .consist .ingredient {
+        margin-bottom: 30px;
+    }
+    .consist .ingredient img {
+        width: 80px;
+    }
+    .sandwich-pic {
+        min-width: auto;
+        margin-top: 20px;
+    }
+    .sandwich-pic aside {
+        top: 53px;
+        right: -50px;
+    }
+    .sandwich-pic aside .minutes.transparent {
+        height: 150px;
+    }
+    .sandwich-pic aside .minutes.transparent:first-child {
+        height: 149px;
+    }
+    .sandwich-pic .recipe {
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        width: 150px;
+        bottom: 55px;
+        left: -15px;
+    }
+    /*footer*/
+    footer {
+        padding-top: 60px;
+        height: 170px;
+    }
+    footer .logotype .logo {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1279px) {
+    .sandwich-pic .recipe {
+        bottom: 40px;
+    }
+}
+@media (min-width: 1130px) and (max-width: 1279px) {
+    .chef .col-right img {
+        width: 480px;
+    }
+    .minutes {
+        top: -68px;
+        right: -20px;
+        width: 170px;
+        height: 170px;
+    }
+    .minutes h6 {
+        line-height: 60px;
+    }
+    .sandwich-pic aside .minutes.transparent {
+        height: 170px;
+    }
+    .sandwich-pic aside .minutes.transparent:first-child {
+        height: 169px;
+    }
+    .sandwich-pic aside {
+        top: 23px;
+        right: -30px;
+    }
+}
+
+@media (min-width: 1180px) and (max-width: 1279px) {
+    .sandwich-pic .recipe {
+        bottom: 20px;
+    }
+}
+
