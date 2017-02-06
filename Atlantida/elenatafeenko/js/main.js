@@ -69,7 +69,7 @@
       e.preventDefault();
       var el = e.currentTarget;
       $(navigationButtons).removeClass('active');
-      $('[data-target="' + el.dataset.target + '"').addClass('active');
+      $('[data-target="' + el.dataset.target + '"]').addClass('active');
       var target = document.getElementById(el.dataset.target);
       if (target) {
         $('body').stop().animate({ scrollTop: target.offsetTop - headerHeight }, '500', 'swing');
@@ -88,7 +88,7 @@
     }
     $('.navigation-button').removeClass('active');
     $('[data-target="' + activeSection.id + '"').addClass('active');
-  })
+  });
 })();
 
 (function initContactButtons() {

@@ -18,10 +18,6 @@ a {
   visibility: hidden;
 }
 
-body {
-  width: 100%;
-}
-
 @font-face {
   font-family: Amsdam;
   src: url(../fonts/Amsdam/Amsdam.ttf)
@@ -148,12 +144,14 @@ header {
     .inner-container;
     padding-top: 255px;
     position: relative;
-    .left-control {
+    > div {
       cursor: pointer;
       height: 34px;
       width: 34px;
       position: absolute;
       top: 336px;
+    }
+    .left-control {
       left: 0;
       background-image: url("../image/index-page/slider/left-control.png");
       &:hover {
@@ -161,11 +159,6 @@ header {
       }
     }
     .right-control {
-      cursor: pointer;
-      height: 34px;
-      width: 34px;
-      position: absolute;
-      top: 336px;
       right: 0;
       background-image: url("../image/index-page/slider/right-control.png");
       &:hover {
@@ -184,10 +177,8 @@ header {
     flex-direction: row;
 
     .slide {
-      background-image: url(../image/index-page/slider/slide-1.jpg);
-      background-repeat: no-repeat;
       background-size: cover;
-      background-position: top, center;
+      background: url(../image/index-page/slider/slide-1.jpg) no-repeat top, center;
       height: 100%;
       flex-grow: 1;
 
@@ -200,7 +191,7 @@ header {
         .text {
           margin: 0 auto;
           h3 {
-            font: 14px 'Crimson Text', serif;;
+            font: 14px 'Crimson Text', serif;
             color: @-text-color-lightest;
             letter-spacing: 1px;
           }
@@ -219,12 +210,12 @@ header {
             }
           }
           a {
+            display: inline-block;
             height: 44px;
-            border: 2px solid #ffffff;
-            width: 149px;
-            display: block;
+            border: 2px solid #fff;
+            padding: 0 30px;
             margin: 0 auto;
-            color: #ffffff;
+            color: #fff;
             line-height: 40px;
             font-family: Montserrat, serif;
             font-size: 15px;
@@ -270,9 +261,6 @@ header {
           h2 {
             line-height: 78px;
           }
-        }
-        p {
-          .article-text;
         }
         .buttons {
           width: 272px;
@@ -600,7 +588,7 @@ header {
         line-height: 78px;
       }
     }
-    p {
+    .art-text {
       .article-text;
       text-align: center;
       width: 85%;
@@ -650,6 +638,7 @@ header {
             width: 146px;
             border-bottom: 2px solid #3E3D3D;
             margin-bottom: 20px;
+            margin-left: 0;
           }
           .social {
             height: auto;
@@ -704,7 +693,7 @@ header {
       margin: 0 auto 55px auto;
     }
     .buttons {
-      width: 430px;
+      width: 363px;
       margin: 40px auto 52px auto;
       a {
         .bordered-white;
@@ -724,7 +713,7 @@ header {
           height: 31px;
           width: auto;
           padding: 0 18px;
-          line-height: 31px;
+          line-height: 28px;
         }
       }
     }
@@ -983,7 +972,6 @@ header {
           text-align: left;
           font: normal 13px Montserrat, serif;
           text-transform: uppercase;
-          margin-bottom: 35px;
           span {
             margin-right: 5px;
           }
